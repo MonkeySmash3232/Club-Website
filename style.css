@@ -1,22 +1,163 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
 body {
-    background-color: #A594F9;
-    color: white;
+  background: #0d1117;
+  color: #c9d1d9;
+  font-family: "Fira Code", monospace;
+  line-height: 1.6;
 }
 
-header  {
-    text-align: center;
-    background-color: #7371FC;
-    padding: 10px;
+.logo img {
+    width: 100px;
+    height: 150px;
 }
 
-header a {
-    text-decoration: none;
-    color: white;
-    border: 1px solid black;
-    padding: 5px;
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
 }
 
-header a:hover {
-    background-color: #b8adec;
+header .logo {
+  color: #58a6ff;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
+nav a {
+  color: #c9d1d9;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #58a6ff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #8b949e;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #58a6ff;
+  color: #0d1117;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1f6feb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #161b22;
+  border-top: 1px solid #30363d;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+/* Cursor effect */
+.cursor {
+  color: #58a6ff;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* Highlight active nav link */
+nav a.active {
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+/* Events Header */
+.events-header {
+  text-align: center;
+  padding: 5rem 2rem 2rem;
+}
+
+.events-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.events-header p {
+  color: #8b949e;
+  font-size: 1.1rem;
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 3rem 5rem;
+}
+
+.event-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  border-color: #58a6ff;
+}
+
+.event-card h2 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.event-card .date {
+  font-size: 0.9rem;
+  color: #8b949e;
+  margin-bottom: 1rem;
+}
+
+.event-card .desc {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #c9d1d9;
+}
