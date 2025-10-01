@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevLab | Submissions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="20250928_1305_DevLab Club Logo_simple_compose_01k68mhd51f6bsrvebc4g124nj.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="submissions.html" class="active">Submissions</a>
+      <a href="themes.html">Themes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="submissions-header">
+      <h1><span class="cursor">_</span> Submit Your Project</h1>
+      <p>Share your hackathon or workshop builds with the DevLab community.</p>
+    </section>
+
+    <section class="submission-form">
+      <form action="#" method="POST">
+        <label for="name">Team / Developer Name</label>
+        <input type="text" id="name" name="name" required placeholder="ex: Team SyntaxError">
+
+        <label for="title">Project Title</label>
+        <input type="text" id="title" name="title" required placeholder="ex: AI-Powered Todo App">
+
+        <label for="link">Project Link</label>
+        <input type="url" id="link" name="link" required placeholder="ex: https://github.com/...">
+
+        <label for="desc">Project Description</label>
+        <textarea id="desc" name="desc" rows="5" placeholder="Give a short overview..."></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DevLab. All rights reserved.</p>
+  </footer>
+</body>
+</html>

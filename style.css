@@ -161,3 +161,112 @@ nav a.active {
   font-size: 1rem;
   color: #c9d1d9;
 }
+
+/* Submissions Header */
+.submissions-header {
+  text-align: center;
+  padding: 5rem 2rem 2rem;
+}
+
+.submissions-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.submissions-header p {
+  color: #8b949e;
+  font-size: 1.1rem;
+}
+
+/* Submission Form */
+.submission-form {
+  max-width: 700px;
+  margin: 2rem auto 5rem;
+  padding: 2rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+.submission-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submission-form label {
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+  color: #c9d1d9;
+}
+
+.submission-form input,
+.submission-form textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: #c9d1d9;
+  font-family: "Fira Code", monospace;
+  resize: none;
+  transition: border 0.2s;
+}
+
+.submission-form input:focus,
+.submission-form textarea:focus {
+  border-color: #58a6ff;
+  outline: none;
+}
+
+.submission-form button {
+  margin-top: 2rem;
+  align-self: flex-start;
+}
+
+/* Themes Header */
+.themes-header {
+  text-align: center;
+  padding: 5rem 2rem 2rem;
+}
+
+.themes-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.themes-header p {
+  color: #8b949e;
+  font-size: 1.1rem;
+}
+
+/* Themes Grid */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem 3rem 5rem;
+}
+
+.theme-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-5px);
+  border-color: #58a6ff;
+}
+
+.theme-card h2 {
+  margin-bottom: 0.75rem;
+  color: #58a6ff;
+}
+
+.theme-card p {
+  color: #c9d1d9;
+  font-size: 1rem;
+}
